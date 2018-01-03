@@ -16,17 +16,17 @@ describe CustomerBase do
   end
 
 	it 'can find by last name' do
-		found = subject.findByLastName("Rossi")
+		found = subject.find_by_last_name("Rossi")
 		expect(found).to eq([alice, bob])
   end
 
 	it 'can find by first and last name' do
-		found = subject.findByFirstAndLastName("Alice", "Rossi")
+		found = subject.find_by_first_and_last_name("Alice", "Rossi")
 		expect(found).to eq([alice])
   end
 
 	it 'can find with credit greater than' do
-		found = subject.findByCreditGreaterThan(20000)
+		found = subject.find_by_credit_greater_than(20000)
 		expect(found).to eq([charlie])
   end
 

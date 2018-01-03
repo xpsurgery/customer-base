@@ -1,10 +1,10 @@
 class Customer
 
-  attr_reader :firstName, :lastName, :credit
+  attr_reader :first_name, :last_name, :credit
 
-	def initialize(firstName, lastName, credit)
-		@firstName = firstName
-		@lastName = lastName
+	def initialize(first_name, last_name, credit)
+		@first_name = first_name
+		@last_name = last_name
 		@credit = credit
   end
 
