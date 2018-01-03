@@ -8,9 +8,5 @@ class Customer
 		@credit = credit
   end
 
-	def to_s
-		return String.format("(Customer %s %s)", firstName, lastName)
-  end
-
 end
 
